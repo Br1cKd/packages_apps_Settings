@@ -1326,4 +1326,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pocket_mode_modes_disabled">Disabled</string>
     <string name="privacy_mode">Privacy mode</string>
     <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
+
+    <!-- Double tap gesture -->
+    <string name="status_bar_double_tap_gesture_title">Double tap gesture</string>
+    <string name="status_bar_double_tap_gesture_summary">Enable double tap on status bar to turn off screen</string>
+
 </resources>

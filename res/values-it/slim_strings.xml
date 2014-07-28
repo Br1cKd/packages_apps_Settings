@@ -1314,4 +1314,8 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="privacy_mode">Modalità privacy</string>
     <string name="privacy_mode_summary">Impedisce l\'espansione e l\'eliminazione delle notifica e visualizza la sola icona per salvaguardare la privacy.</string>
 
+    <!-- Double tap gesture -->
+    <string name="status_bar_double_tap_gesture_title">Doppio tap statusbar</string>
+    <string name="status_bar_double_tap_gesture_summary">Attiva il doppio tap sulla barra di stato per spegnere lo schermo</string>
+
 </resources>
