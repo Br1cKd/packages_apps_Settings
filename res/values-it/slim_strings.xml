@@ -1329,7 +1329,7 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="see_through_summary">Mostra nella lockscreen la schermata attiva sottostante</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Proximity wake-up</string>
-    <string name="proximity_wake_summary">Use proximity sensor to help decide whether to wake device up</string>
+    <string name="proximity_wake_title">Previeni risveglio accidentale</string>
+    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo</string>
 
 </resources>
