@@ -220,6 +220,7 @@
     <string name="volume_overlay_expandable">Extensible</string>
     <string name="volume_overlay_expanded">Etendu</string>
     <string name="volume_overlay_disable">Désactiver</string>
+    <string name="volume_panel_bg_color_title">Couleur du panneau de volume</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Son d\'obturateur de l\'appareil photo</string>

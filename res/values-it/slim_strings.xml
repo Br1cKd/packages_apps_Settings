@@ -223,6 +223,7 @@
     <string name="volume_overlay_expandable">Espandibile</string>
     <string name="volume_overlay_expanded">Espanso</string>
     <string name="volume_overlay_disable">Disattivato</string>
+    <string name="volume_panel_bg_color_title">Colore pannello volume</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Suono scatto fotocamera</string>

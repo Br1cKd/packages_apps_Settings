@@ -223,6 +223,7 @@
     <string name="volume_overlay_expandable">Expandable</string>
     <string name="volume_overlay_expanded">Expanded</string>
     <string name="volume_overlay_disable">Disable</string>
+    <string name="volume_panel_bg_color_title">Volume panel BG color</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Camera shutter sound</string>

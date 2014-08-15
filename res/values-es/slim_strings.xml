@@ -223,6 +223,7 @@
     <string name="volume_overlay_expandable">Expandible</string>
     <string name="volume_overlay_expanded">Expandido</string>
     <string name="volume_overlay_disable">Deshabilitado</string>
+    <string name="volume_panel_bg_color_title">Color fondo del panel de volumen</string>
 
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Sonido de obturador de cámara</string>
