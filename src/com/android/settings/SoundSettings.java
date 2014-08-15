@@ -281,7 +281,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 Settings.System.VOLUME_PANEL_BG_COLOR, 0x00ffffff);
         String hexColor = String.format("#%08x", (0x00ffffff & intColor));
         if (hexColor.equals("#00ffffff")) {
-            mVolumePanelBgColor.setSummary("TRDS default");
+            mVolumePanelBgColor.setSummary(R.string.trds_default_color);
         } else {
             mVolumePanelBgColor.setSummary(hexColor);
         }
@@ -326,7 +326,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(getContentResolver(),
                 Settings.System.VOLUME_PANEL_BG_COLOR, DEFAULT_BACKGROUND_COLOR);
         mVolumePanelBgColor.setNewPreviewColor(DEFAULT_BACKGROUND_COLOR);
-        mVolumePanelBgColor.setSummary("TRDS default");
+        mVolumePanelBgColor.setSummary(R.string.trds_default_color);
     }
 
     @Override
@@ -466,7 +466,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(objValue)));
             if (hex.equals("#00ffffff")) {
-                preference.setSummary("TRDS default");
+                preference.setSummary(R.string.trds_default_color);
             } else {
                 preference.setSummary(hex);
             }
