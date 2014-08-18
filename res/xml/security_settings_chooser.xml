@@ -80,7 +80,7 @@
     <PreferenceCategory
         android:key="lockscreen_notifications_category"
         android:title="@string/lockscreen_notifications">
-        
+
         <CheckBoxPreference
             android:key="lockscreen_notifications"
             android:title="@string/lockscreen_notifications"
@@ -89,7 +89,7 @@
         <ListPreference
             android:title="@string/pocket_mode"
             android:summary="@string/pocket_mode_summary"
-            android:key="pocket_mode"
+            android:key="lockscreen_notifications_pocket_mode"
             android:entries="@array/pocket_mode_modes"
             android:entryValues="@array/pocket_mode_values" />
 
@@ -103,8 +103,6 @@
             android:key="lockscreen_notifications_type"
             android:entries="@array/lockscreen_notification_types"
             android:entryValues="@array/lockscreen_notification_types_values" />
-
-        <!-- App blacklist temporary removed -->
 
         <ListPreference
             android:title="@string/notifications_height"
