@@ -44,6 +44,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String KEY_STATUS_BAR_CLOCK = "clock_style_pref";
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String STATUS_BAR_NETWORK_STATS = "status_bar_network_stats";
+    private static final String STATUS_BAR_NETWORK_STATS_SHOW_ARROW = "status_bar_network_stats_show_arrow";
     private static final String STATUS_BAR_NETWORK_STATS_UPDATE = "status_bar_network_stats_update_frequency";
     private static final String STATUS_BAR_NETWORK_STATS_TEXT_COLOR = "status_bar_network_stats_text_color";
 
@@ -51,6 +52,7 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private CheckBoxPreference mStatusBarBrightnessControl;
     private ListPreference mStatusBarNetStatsUpdate;
     private CheckBoxPreference mStatusBarNetworkStats;
+    private CheckBoxPreference mNetStatsArrow;
     private ColorPickerPreference mNetStatsColorPicker;
 
     @Override
@@ -82,6 +84,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
                 Settings.System.STATUS_BAR_NETWORK_STATS, 0) == 1));
         mStatusBarNetworkStats.setOnPreferenceChangeListener(this);
 
+        mNetStatsArrow = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_STATS_SHOW_ARROW);
+        mNetStatsArrow.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_NETWORK_STATS_SHOW_ARROW, 1) == 1));
+        mNetStatsArrow.setOnPreferenceChangeListener(this);
+
         mStatusBarNetStatsUpdate = (ListPreference) prefSet.findPreference(STATUS_BAR_NETWORK_STATS_UPDATE);
         long statsUpdate = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_NETWORK_STATS_UPDATE_INTERVAL, 500);
@@ -110,6 +117,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         } else if (preference == mStatusBarNetworkStats) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUS_BAR_NETWORK_STATS,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mNetStatsArrow) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_NETWORK_STATS_SHOW_ARROW,
                     (Boolean) newValue ? 1 : 0);
             return true;
         } else if (preference == mNetStatsColorPicker) {
