@@ -1287,6 +1287,8 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="status_bar_network_stats_update_summary">Quanto spesso i valori vengono aggiornati</string>
     <string name="status_bar_network_stats_color_title">Colore testo indicatori</string>
     <string name="status_bar_network_stats_color_summary">Modifica il colore del testo degli indicatori nella barra di stato</string>
+    <string name="status_bar_show_network_stats_show_arrow_title">Mostra frecce</string>
+    <string name="status_bar_show_network_stats_show_arrow_summary">Mostra due frecce indicative nella barra di stato</string>
 
     <!-- Lockscreen Notifications -->
     <string name="lockscreen_notifications">Notifiche lockscreen</string>
