@@ -96,7 +96,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String MENU_UNLOCK_PREF = "menu_unlock";
 
     private static final String LOCKSCREEN_NOTIFICATIONS = "lockscreen_notifications";
-    private static final String LOCKSCREEN_NOTIFICATIONS_POCKET_MODE = "lockscreen_notifications_pocket_mode";
+    private static final String LOCKSCREEN_NOTIFICATIONS_POCKET_MODE = "pocket_mode";
     private static final String LOCKSCREEN_NOTIFICATIONS_WAKE_ON_NOTIFICATION =
             "lockscreen_notifications_wake_on_notification";
     private static final String LOCKSCREEN_NOTIFICATIONS_HEIGHT = "lockscreen_notifications_height";
