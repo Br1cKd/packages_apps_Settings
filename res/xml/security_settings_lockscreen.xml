@@ -76,11 +76,13 @@
             android:summary="@string/wake_on_notification_summary"
             android:key="lockscreen_notifications_wake_on_notification" />
 
-        <MultiSelectListPreference
+       <MultiSelectListPreference
             android:title="@string/lockscreen_notifications_type"
             android:key="lockscreen_notifications_type"
             android:entries="@array/lockscreen_notification_types"
             android:entryValues="@array/lockscreen_notification_types_values" />
+
+        <!-- App blacklist temporary removed -->
 
         <ListPreference
             android:title="@string/notifications_height"
