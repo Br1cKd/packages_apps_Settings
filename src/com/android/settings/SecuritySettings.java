@@ -99,7 +99,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String LOCKSCREEN_NOTIFICATIONS_POCKET_MODE = "lockscreen_notifications_pocket_mode";
     private static final String LOCKSCREEN_NOTIFICATIONS_WAKE_ON_NOTIFICATION =
             "lockscreen_notifications_wake_on_notification";
-    private static final String LOCKSCREEN_NOTIFICATIONS_PRIVACY_MODE = "lockscreen_notifications_privacy_mode";
     private static final String LOCKSCREEN_NOTIFICATIONS_HEIGHT = "lockscreen_notifications_height";
     private static final String LOCKSCREEN_NOTIFICATIONS_COLOR = "lockscreen_notifications_color";
     private static final String LOCKSCREEN_NOTIFICATIONS_TYPE = "lockscreen_notifications_type";
@@ -169,7 +168,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mLockscreenNotifications;
     private ListPreference mLockscreenNotificationsPocketMode;
     private CheckBoxPreference mLockscreenNotificationsWakeOnNotification;
-    private CheckBoxPreference mLockscreenNotificationsPrivacyMode;
     private ListPreference mLockscreenNotificationsHeight;
     private MultiSelectListPreference mLockscreenNotificationsType;
     private ColorPickerPreference mLockscreenNotificationsColor;
@@ -408,12 +406,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 getContentResolver(), Settings.System.LOCKSCREEN_NOTIFICATIONS_WAKE_ON_NOTIFICATION,
                 0, UserHandle.USER_CURRENT) == 1);
         mLockscreenNotificationsWakeOnNotification.setOnPreferenceChangeListener(this);
-        mLockscreenNotificationsPrivacyMode = (CheckBoxPreference) root.findPreference(
-                LOCKSCREEN_NOTIFICATIONS_PRIVACY_MODE);
-        mLockscreenNotificationsPrivacyMode.setChecked(Settings.System.getIntForUser(
-                getContentResolver(), Settings.System.LOCKSCREEN_NOTIFICATIONS_PRIVACY_MODE,
-                0, UserHandle.USER_CURRENT) == 1);
-        mLockscreenNotificationsPrivacyMode.setOnPreferenceChangeListener(this);
         int lockscreenNotificationsHeight = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.LOCKSCREEN_NOTIFICATIONS_HEIGHT, 0, UserHandle.USER_CURRENT);
         mLockscreenNotificationsHeight = (ListPreference) root.findPreference(
@@ -1034,10 +1026,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mLockscreenNotificationsWakeOnNotification) {
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.LOCKSCREEN_NOTIFICATIONS_WAKE_ON_NOTIFICATION,
-                    ((Boolean) value) ? 1 : 0, UserHandle.USER_CURRENT);
-        } else if (preference == mLockscreenNotificationsPrivacyMode) {
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.LOCKSCREEN_NOTIFICATIONS_PRIVACY_MODE,
                     ((Boolean) value) ? 1 : 0, UserHandle.USER_CURRENT);
         } else if (preference == mLockscreenNotificationsHeight) {
             int userVal = Integer.valueOf((String) value);

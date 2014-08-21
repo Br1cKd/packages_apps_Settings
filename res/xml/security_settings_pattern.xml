@@ -119,7 +119,7 @@
         <ListPreference
             android:title="@string/pocket_mode"
             android:summary="@string/pocket_mode_summary"
-            android:key="pocket_mode"
+            android:key="lockscreen_notifications_pocket_mode"
             android:entries="@array/pocket_mode_modes"
             android:entryValues="@array/pocket_mode_values" />
 
@@ -127,11 +127,6 @@
             android:title="@string/wake_on_notification"
             android:summary="@string/wake_on_notification_summary"
             android:key="lockscreen_notifications_wake_on_notification" />
-
-        <CheckBoxPreference
-            android:title="@string/privacy_mode"
-            android:summary="@string/privacy_mode_summary"
-            android:key="lockscreen_notifications_privacy_mode" />
 
         <MultiSelectListPreference
             android:title="@string/lockscreen_notifications_type"
