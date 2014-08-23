@@ -264,7 +264,7 @@
     <!-- Setting checkbox title for root access -->
     <string name="root_access">Dostęp do praw administratora</string>
     <string name="root_access_warning_title">Zezwolić na dostęp do praw administratora?</string>
-    <string name="root_access_warning_message">Zezwiolnie aplikacjom na dostęp do praw administratora jest bardzo niebezpieczne i może naruszyć bezpieczeństwo systemu!</string>
+    <string name="root_access_warning_message">Zezwolenie aplikacjom na dostęp do praw administratora jest bardzo niebezpieczne i może naruszyć bezpieczeństwo systemu!</string>
     <string name="root_access_none">Wyłączone</string>
     <string name="root_access_apps">Tylko aplikacje</string>
     <string name="root_access_adb">Tylko ADB</string>
@@ -401,7 +401,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
     <string name="shortcut_action_ring_silent">Dzwonek/wyciszony</string>
     <string name="shortcut_action_ring_vib_silent">Dzwonek/Wibracja/Wyciszony</string>
     <string name="shortcut_action_camera">Aparat</string>
-    <string name="shortcut_action_media_next">Muzyska-następny utwór</string>
+    <string name="shortcut_action_media_next">Muzyka-następny utwór</string>
     <string name="shortcut_action_media_play_pause">Muzyka-play/pause</string>
     <string name="shortcut_action_media_previous">Muzyka-poprzedni utwór</string>
     <string name="shortcut_action_wake_device">Wybudź telefon</string>
@@ -415,7 +415,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
     <string name="shortcut_action_max">Osiągnięto maksymalną liczbę wpisów</string>
     <string name="shortcut_action_warning">Uwaga</string>
     <string name="shortcut_action_warning_message">Nie można usunąć ostatniego wpisu</string>
-    <string name="shortcut_action_disable_message">Disabled\nAdd an entry to enable this feature</string>
+    <string name="shortcut_action_disable_message">Wyłączone\nDodaj wpis aby włączyć tą funkcję</string>
     <string name="shortcut_image_not_valid">Wybrana aplikacja nie ma poprawnej ikony albo nie obsługuje kadrowania ikon. Wybierz inną aplikację.</string>
     <string name="shortcut_duplicate_entry">Wybrana akcja nie może być dodana dwukrotnie</string>
 
@@ -1203,7 +1203,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
     <string name="recent_panel_100">100% (domyślne)</string>
     <string name="recent_panel_85">85%</string>
     <string name="recent_panel_70">70%</string>
-    <string name="recent_panel_expanded_mode_title">Rozszerzony pulpit</string>
+    <string name="recent_panel_expanded_mode_title">Tryb rozszerzony</string>
     <string name="recent_panel_expanded_mode_summary">Widok rozszerzony panelu ostatnich aplikacji</string>
     <string name="recent_panel_expanded_mode_auto">Auto (domyślne)</string>
     <string name="recent_panel_expanded_mode_always">Zawsze</string>
