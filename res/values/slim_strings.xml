@@ -1331,6 +1331,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_notifications_excluded_apps_title">Excluded Applications</string>
     <string name="lockscreen_notifications_excluded_apps_summary">Excluded applications will not show notifications on lockscreen</string>
     <string name="privacy_mode">Privacy mode</string>
-    <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
+    <string name="privacy_mode_summary">Disables notifications from being shown and dismissed. This way, you just see the icons of your notifications.</string>
 
 </resources>
