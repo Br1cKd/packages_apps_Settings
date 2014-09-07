@@ -60,12 +60,15 @@ public class HeadsUp extends SettingsPreferenceFragment
             "heads_up_bg_color";
     private static final String HEADS_UP_TEXT_COLOR =
             "heads_up_text_color";
+    private static final String PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN =
+            "heads_up_exclude_from_lock_screen";
 
     ListPreference mHeadsUpSnoozeTime;
     ListPreference mHeadsUpTimeOut;
     CheckBoxPreference mHeadsUpExpanded;
     CheckBoxPreference mHeadsUpShowUpdates;
     CheckBoxPreference mHeadsUpGravity;
+    CheckBoxPreference mHeadsExcludeFromLockscreen;
 
     private ColorPickerPreference mHeadsUpBgColor;
     private ColorPickerPreference mHeadsUpTextColor;
@@ -98,6 +101,11 @@ public class HeadsUp extends SettingsPreferenceFragment
         mHeadsUpGravity.setChecked(Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.HEADS_UP_GRAVITY_BOTTOM, 0, UserHandle.USER_CURRENT) == 1);
         mHeadsUpGravity.setOnPreferenceChangeListener(this);
+
+        mHeadsExcludeFromLockscreen = (CheckBoxPreference) findPreference(PREF_HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN);
+        mHeadsExcludeFromLockscreen.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN, 0, UserHandle.USER_CURRENT) == 1);
+        mHeadsExcludeFromLockscreen.setOnPreferenceChangeListener(this);
 
         mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
         mHeadsUpSnoozeTime.setOnPreferenceChangeListener(this);
@@ -209,6 +217,11 @@ public class HeadsUp extends SettingsPreferenceFragment
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HEADS_UP_TEXT_COLOR,
                     intHexText);
+            return true;
+        } else if (preference == mHeadsExcludeFromLockscreen) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN,
+                    (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }
         return false;
