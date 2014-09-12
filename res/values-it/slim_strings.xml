@@ -1325,6 +1325,6 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
 
     <!--Lockscreen See Through-->
     <string name="see_through_title">Vedi attraverso</string>
-    <string name="see_through_summary">Mostra la schermata visualizzata prima del blocco</string>
+    <string name="see_through_summary">Mostra nella lockscreen la schermata attiva sottostante</string>
 
 </resources>
