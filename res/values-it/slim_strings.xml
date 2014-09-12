@@ -1323,4 +1323,8 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="privacy_mode">Modalità privacy</string>
     <string name="privacy_mode_summary">Impedisce l\'espansione e l\'eliminazione delle notifica e visualizza la sola icona per salvaguardare la privacy.</string>
 
+    <!--Lockscreen See Through-->
+    <string name="see_through_title">Vedi attraverso</string>
+    <string name="see_through_summary">Mostra la schermata visualizzata prima del blocco</string>
+
 </resources>
