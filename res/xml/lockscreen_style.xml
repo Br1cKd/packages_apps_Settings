@@ -22,15 +22,6 @@
         android:title="@string/see_through_title"
         android:summary="@string/see_through_summary" />
 
-    <Preference
-        android:key="lockscreen_wallpaper"
-        android:title="@string/lockscreen_wallpaper"
-        android:persistent="false">
-        <intent
-            android:targetPackage="com.android.wallpapercropper"
-            android:targetClass="com.android.wallpapercropper.LockscreenWallpaper"/>
-    </Preference>
-
     <ListPreference
         android:key="lockscreen_lock_icon"
         android:title="@string/lockscreen_icon_title"
