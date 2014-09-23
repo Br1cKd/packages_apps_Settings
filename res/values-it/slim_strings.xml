@@ -1274,7 +1274,7 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="heads_up_switch_label">Attiva le notifiche heads up</string>
     <string name="heads_up_exclude_from_lock_screen_title">Disattiva nella lockscreen</string>
     <string name="heads_up_exclude_from_lock_screen_summary">Disattiva le heads up nella schermata di sblocco</string>
-    <string name="heads_up_bg_color_title">Colore sfondo</string>
+    <string name="heads_up_bg_color_title">Background color</string>
 
     <string name="reset_default_message">Resetta a default</string>
 
