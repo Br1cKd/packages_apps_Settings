@@ -178,7 +178,6 @@ public class HeadsUp extends SettingsPreferenceFragment
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.HEADS_UP_EXCLUDE_FROM_LOCK_SCREEN,
                     (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
         } else if (preference == mHeadsUpBgColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
