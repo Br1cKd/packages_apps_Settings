@@ -94,7 +94,6 @@
         android:permissionGroup="android.permission-group.SUPERUSER"
         android:protectionLevel="dangerous" />
 
-
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
             android:taskAffinity=""
@@ -247,7 +246,6 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/wireless_settings" />
         </activity>
-
 
         <!-- Top-level settings -->
 
@@ -499,7 +497,6 @@
             <meta-data android:name="com.android.settings.PARENT_FRAGMENT_CLASS"
                 android:value="com.android.settings.Settings$WirelessSettingsActivity" />
         </activity>
-
 
         <activity android:name="Settings$VpnSettingsActivity"
                 android:label="@string/vpn_settings_title"
@@ -1509,7 +1506,6 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.wfd.WifiDisplaySettings" />
         </activity>
-
 
         <!-- Development settings -->
 
