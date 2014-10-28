@@ -1108,4 +1108,9 @@
 
     <!-- Device specific settings -->
     <string name="screen_off_gesture_settings_title">Жесты на выключенном экране</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвращать случайные пробуждения</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
+
 </resources>

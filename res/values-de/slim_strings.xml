@@ -1208,4 +1208,8 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <!-- Device specific settings -->
     <string name="screen_off_gesture_settings_title">Bildschirm aus Gesten</string>
 
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Versehentliches Aufwecken verhindern</string>
+    <string name="proximity_wake_summary">Näherungssensor prüfen um den Bildschirm aufzuwecken</string>
+
 </resources>
