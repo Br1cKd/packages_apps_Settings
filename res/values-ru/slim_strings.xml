@@ -377,6 +377,8 @@
     <string name="circle_battery_animation_speed_stock">Нормально</string>
     <string name="circle_battery_animation_speed_fast">Быстро</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвета часов?</string>
+    <string name="status_bar_ticker_title">Показ уведомлений</string>
+    <string name="status_bar_ticker_summary">Анимация текста уведомления в строке состояния</string>
     <string name="title_keyboard_input">Дополнительные настройки</string>
     <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
     <string name="disable_fullscreen_keyboard_summary">В ландшафтном режиме клавиатура не будет разворачиваться на весь экран</string>
