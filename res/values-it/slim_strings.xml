@@ -1333,4 +1333,9 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="proximity_wake_title">Previeni risveglio accidentale</string>
     <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo</string>
 
+    <!-- Screen Record -->
+    <string name="screenrecord_settings_title">Registra schermo</string>
+    <string name="power_menu_toggle_screenrecord_title">Registra schermo</string>
+    <string name="power_menu_toggle_screenrecord_summary">Mostra il pulsante di registrazione nel menu Power</string>
+
 </resources>
