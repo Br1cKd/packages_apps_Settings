@@ -604,7 +604,7 @@ contrôle additionnel. \'Retirer\' supprime la ligne sélectionnée.
     <string name="navigation_bar_glow_tint_title">Couleur du halo</string>
 
     <!-- Advanced settings -->
-    <string name="advanced_options_settings_title">Root &amp; tools</string>
+    <string name="advanced_options_settings_title">Outils système</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Scan des médias au démarrage</string>

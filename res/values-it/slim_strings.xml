@@ -621,7 +621,7 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <string name="navigation_bar_glow_tint_title">Colore bagliore</string>
 
     <!-- Advanced settings -->
-    <string name="advanced_options_settings_title">Root e tools</string>
+    <string name="advanced_options_settings_title">Strumenti di sistema</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Comportamento MediaScanner all\'avvio</string>
