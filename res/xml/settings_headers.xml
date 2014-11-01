@@ -164,6 +164,13 @@
     <header android:id="@+id/personal_section"
         android:title="@string/header_category_personal" />
 
+    <!--  ACCOUNTS section -->
+    <header
+        android:id="@+id/account_settings"
+        android:title="@string/account_settings"
+        android:icon="@drawable/ic_settings_accounts"
+        android:fragment="com.android.settings.accounts.AccountsSettings" />
+
     <!-- Location -->
     <header
         android:fragment="com.android.settings.location.LocationSettings"
@@ -191,19 +198,6 @@
         android:icon="@drawable/ic_settings_backup"
         android:title="@string/privacy_settings"
         android:id="@+id/privacy_settings" />
-
-    <!--  ACCOUNTS section -->
-    <header
-            android:id="@+id/account_settings"
-            android:title="@string/account_settings" />
-
-    <header
-            android:id="@+id/account_add"
-            android:title="@string/add_account_label"
-            android:icon="@drawable/ic_menu_add_dark">
-        <intent
-            android:action="android.settings.ADD_ACCOUNT_SETTINGS"/>
-    </header>
 
     <!-- SYSTEM -->
     <header android:id="@+id/system_section"
