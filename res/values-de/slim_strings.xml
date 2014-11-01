@@ -575,7 +575,7 @@ Mittels \"Entfernen\" kann die ausgewählte Stützstelle aus dem Helligkeitsverl
     <string name="navigation_bar_glow_tint_title">Leuchtfarbe der Navigationsleiste</string>
 
     <!-- Advanced settings -->
-    <string name="advanced_options_settings_title">Erweiterte Einstellungen</string>
+    <string name="advanced_options_settings_title">Root &amp; tools</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">MediaScanner-Verhalten beim Booten</string>

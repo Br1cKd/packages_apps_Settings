@@ -620,7 +620,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="navigation_bar_glow_tint_title">Color al presionar</string>
 
     <!-- Advanced settings -->
-    <string name="advanced_options_settings_title">Opciones avanzadas</string>
+    <string name="advanced_options_settings_title">Root &amp; tools</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Buscar nuevos ficheros multimedia en el arranque</string>
