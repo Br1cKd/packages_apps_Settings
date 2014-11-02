@@ -605,7 +605,7 @@ Dodatkowe opcje są dostępne przez długie przytrzymanie linii. Wybierając opc
     <string name="navigation_bar_glow_tint_title">Kolor poświaty</string>
 
     <!-- Advanced settings -->
-    <string name="advanced_options_settings_title">Ustawienia zaawansowane</string>
+    <string name="advanced_options_settings_title">Narzędzia systemowe</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Zachowanie skanera mediów przy uruchomieniu</string>
