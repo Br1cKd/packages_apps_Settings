@@ -1336,5 +1336,5 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Screen Record -->
     <string name="screenrecord_settings_title">Screen Record</string>
     <string name="power_menu_toggle_screenrecord_title">Screen Record</string>
-    <string name="power_menu_toggle_screenrecord_summary">Show a Screen Record option in the Power Menu.\n\nYou can also start a recording by pressing Power and VolumeUp buttons.\n\nThe recording can be stopped from the notification panel, where you can also enable the touch pointer.</string>
+    <string name="power_menu_toggle_screenrecord_summary">Show a Screen Record option in the Power Menu.\n\nIf disabled, you can still start Screen Record by pressing Power and VolumeUp buttons.\n\nThe recording can be stopped from the notification panel, where you can also enable the touch pointer.</string>
 </resources>

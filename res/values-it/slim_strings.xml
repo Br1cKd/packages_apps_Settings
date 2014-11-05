@@ -1336,6 +1336,6 @@ aggiungere ulteriori punti di controllo. \'Rimuovi\' elimina la riga selezionata
     <!-- Screen Record -->
     <string name="screenrecord_settings_title">Registra schermo</string>
     <string name="power_menu_toggle_screenrecord_title">Registra schermo</string>
-    <string name="power_menu_toggle_screenrecord_summary">Mostra il pulsante di registrazione nel menu Power.\n\nPuoi anche avviare la registrazione premendo Power e VolumeSU.\n\nLa registrazione può essere fermata dal pannello delle notifiche, da cui è anche possibile attivare il puntatore del tocco.</string>
+    <string name="power_menu_toggle_screenrecord_summary">Mostra il pulsante di registrazione nel menu Power.\n\nSe disattivato, puoi comunque avviare la registrazione premendo Power e VolumeSU.\n\nLa registrazione può essere fermata dal pannello delle notifiche, da cui è anche possibile attivare il puntatore del tocco.</string>
 
 </resources>
