@@ -228,6 +228,9 @@
 
     <string name="volume_panel_bg_color_title">Colore pannello volume</string>
 
+    <string name="volume_panel_timeout_title">Timeout pannello volume</string>
+    <string name="volume_panel_timeout_summary">Tempo di visualizzazione del pannello volume</string>
+
     <!-- Sound settings screen, setting check box label -->
     <string name="camera_sounds_title">Suono scatto fotocamera</string>
     <string name="camera_sounds_summary">Attiva suono in caso di scatto con la fotocamera</string>
