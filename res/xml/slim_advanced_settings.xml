@@ -52,4 +52,9 @@
             android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
     </PreferenceScreen>
 
+    <PreferenceScreen
+            android:key="screen_recorder"
+            android:title="@string/screen_recorder_title"
+            android:fragment="com.android.settings.slim.ScreenRecorderSettings" />
+
 </PreferenceScreen>
