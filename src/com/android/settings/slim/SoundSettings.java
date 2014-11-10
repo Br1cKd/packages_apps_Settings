@@ -34,7 +34,6 @@ import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
-import android.preference.SlimSeekBarPreference;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
@@ -66,7 +65,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_ADJUST_SOUNDS = "volume_adjust_sounds";
     private static final String KEY_VOLUME_OVERLAY = "volume_overlay";
     private static final String VOLUME_PANEL_BG_COLOR = "volume_panel_bg_color";
-    private static final String KEY_VOLUME_PANEL_TIMEOUT = "volume_panel_timeout";
 
     // Request code for power notification ringtone picker
     private static final int REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE = 1;
@@ -85,7 +83,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mVolumeAdustSound;
     private ListPreference mVolumeOverlay;
     private ColorPickerPreference mVolumePanelBgColor;
-    private SlimSeekBarPreference mVolumePanelTimeout;
 
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DEFAULT_BACKGROUND_COLOR = 0x00ffffff;
@@ -190,17 +187,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         }
         mVolumePanelBgColor.setNewPreviewColor(intColor);
         setHasOptionsMenu(true);
-
-        // Volume panel timeout
-        mVolumePanelTimeout = (SlimSeekBarPreference) findPreference(KEY_VOLUME_PANEL_TIMEOUT);
-        if (mVolumePanelTimeout != null) {
-            mVolumePanelTimeout.setDefault(3000);
-            mVolumePanelTimeout.isMilliseconds(true);
-            mVolumePanelTimeout.setInterval(1);
-            mVolumePanelTimeout.minimumValue(100);
-            mVolumePanelTimeout.multiplyValue(100);
-            mVolumePanelTimeout.setOnPreferenceChangeListener(this);
-        }
     }
 
     @Override
@@ -244,14 +230,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
-
-        // Volume panel timeout
-        if (mVolumePanelTimeout != null) {
-            final int statusVolumePanelTimeout = Settings.System.getInt(getContentResolver(),
-                    Settings.System.VOLUME_PANEL_TIMEOUT, 3000);
-            // minimum 100 is 1 interval of the 100 multiplier
-            mVolumePanelTimeout.setInitValue((statusVolumePanelTimeout / 100) - 1);
-        }
     }
 
     @Override
@@ -335,12 +313,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_PANEL_BG_COLOR,
                     intHex);
-        }
-
-        if (preference == mVolumePanelTimeout) {
-            int volumePanelTimeout = Integer.valueOf((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.VOLUME_PANEL_TIMEOUT, volumePanelTimeout);
         }
         return true;
     }
