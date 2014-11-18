@@ -81,7 +81,12 @@ public final class BluetoothNameDialogFragment extends DialogFragment implements
 
     public BluetoothNameDialogFragment() {
         LocalBluetoothManager localManager = LocalBluetoothManager.getInstance(getActivity());
-        mLocalAdapter = localManager.getBluetoothAdapter();
+        if (localManager != null) {
+            mLocalAdapter = localManager.getBluetoothAdapter();
+        } else {
+            Log.e(TAG, "Error: Can't get LocalBluetoothManager");
+            mLocalAdapter = null;
+        }
     }
 
     @Override
