@@ -480,4 +480,6 @@
   <string name="heads_up_time_out_8sec">8 secondi</string>
   <string name="heads_up_time_out_10sec">10 secondi</string>
   <string name="heads_up_time_out_never">Mai</string>
+  <string name="doze_timeout_title">Timeout Ambient display</string>
+  <string name="doze_timeout_summary">Tempo di accensione dello schermo all\'arrivo di una notifica</string>
 </resources>
