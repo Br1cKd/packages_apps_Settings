@@ -45,4 +45,9 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
+    <!-- Title of checkbox setting that enables the terminal app. [CHAR LIMIT=32] -->
+    <string name="enable_terminal_title">Local terminal</string>
+    <!-- Summary of checkbox setting that enables the terminal app. [CHAR LIMIT=64] -->
+    <string name="enable_terminal_summary">Enable terminal app that offers local shell access</string>
+
 </resources>
